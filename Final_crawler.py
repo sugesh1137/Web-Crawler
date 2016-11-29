@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 #first query, fetching the details of the mobile-phone section of the 1st page
 
 def shopping_spider_query_1(keyword):
-    url = 'https://www.olx.in/bangalore/mobile-phones/' + keyword + '?/page=1'
+    url = 'https://www.olx.in/bangalore/' + keyword + '?/page=1'
     source_code = requests.get(url)
     plain_text = source_code.text
     soup = BeautifulSoup(plain_text)
